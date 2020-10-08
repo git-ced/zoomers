@@ -4,8 +4,12 @@ import App, { AppContext } from 'next/app';
 // ANCHOR React
 import React from 'react';
 
+// ANCHOR Components
+import { GlobalProvider } from '@zoomers/components/utils/provider/GlobalProvider';
+
 // ANCHOR CSS
 import 'normalize.css/normalize.css';
+import '../public/styles/global.css';
 
 interface AppProps {
   err?: Error;
@@ -32,7 +36,9 @@ export default class ZoomerApp extends App<AppProps> {
     } = this.props;
 
     return (
-      <Component {...pageProps} />
+      <GlobalProvider>
+        <Component {...pageProps} />
+      </GlobalProvider>
     );
   }
 }
