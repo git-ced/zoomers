@@ -1,0 +1,16 @@
+{
+  "name": "next-zoom",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9999",
+    "build": "next build",
+    "start": "next start -p 9999"
+  },
+  "dependencies": {
+    "@zoomus/websdk": "^1.8.1",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
