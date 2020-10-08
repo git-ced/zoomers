@@ -1,4 +1,5 @@
 import { ZoomMtg } from "@zoomus/websdk";
+import { ZOOM } from '../credentials';
 
 console.log("checkSystemRequirements");
 console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
@@ -10,14 +11,14 @@ console.log(JSON.stringify(ZoomMtg.checkSystemRequirements()));
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareJssdk();
 
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = ZOOM.API_KEY;
 
 /**
  * NEVER PUT YOUR ACTUAL API SECRET IN CLIENT SIDE CODE, THIS IS JUST FOR QUICK PROTOTYPING
  * The below generateSignature should be done server side as not to expose your api secret in public
  * You can find an eaxmple in here: https://marketplace.zoom.us/docs/sdk/native-sdks/Web-Client-SDK/tutorial/generate-signature
  */
-const API_SECRET = "YOUR_API_SECRET";
+const API_SECRET = ZOOM.API_SECRET;
 
 testTool = window.testTool;
 document.getElementById("display_name").value =
@@ -110,6 +111,7 @@ window.copyJoinLink = function (element) {
     alert("Meeting number or username is empty");
     return false;
   }
+
   const signature = ZoomMtg.generateSignature({
     meetingNumber: meetingConfig.mn,
     apiKey: API_KEY,

@@ -20,6 +20,9 @@ module.exports = {
         // filename: `zoom-meeting-${buildVersion}-[name]-[chunkhash].min.js`,
         filename: '[name].min.js'
     },
+    node: {
+        fs: "empty"
+    },
     module: {
         rules: [
             {
