@@ -8,9 +8,24 @@
     "start": "next start -p 9999"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^9.5.2",
     "@zoomus/websdk": "^1.8.1",
     "next": "9.5.3",
+    "normalize.css": "^8.0.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.5",
+    "@types/react": "^16.9.51",
+    "@types/styletron-engine-atomic": "^1.1.0",
+    "@types/styletron-react": "^5.0.2",
+    "@types/styletron-standard": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.8.1",
+    "eslint-config-lxsmnsyc": "^0.1.7",
+    "typescript": "^3.9.5"
   }
 }
