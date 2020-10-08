@@ -1,0 +1,7 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "javascript.format.semicolons": "insert",
+  "typescript.format.semicolons": "insert"
+}
