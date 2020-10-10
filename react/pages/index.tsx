@@ -2,9 +2,9 @@
 import React from 'react'
 
 // ANCHOR Component
-import { ZoomerAppHead } from '@zoomers/components/utils/app-head'
-import { ZoomerHome } from '@zoomers/components/home';
-import { ZoomerPage } from '@zoomers/components/utils/page-container';
+import { ZoomerAppHead } from '../components/utils/head/AppHead';
+import { ZoomerHome } from '../components/home';
+import { ZoomerPage } from '../components/utils/page-container';
 
 export default React.memo(
   () => (
