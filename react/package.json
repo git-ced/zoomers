@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 9999",
+    "dev": "next dev -p 9998",
     "build": "next build",
-    "start": "next start -p 9999"
+    "start": "next start -p 9998"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^9.5.2",
