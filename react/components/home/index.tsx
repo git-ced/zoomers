@@ -20,7 +20,7 @@ export const ZoomerHome = React.memo(
           {GREETING}
           <StyledLink
             $style={LINK}
-            href="/join"
+            href="/meeting"
           >
             Zoomers!
           </StyledLink>
