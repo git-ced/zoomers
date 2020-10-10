@@ -32,6 +32,7 @@ class ZoomerDocument extends Document<IZoomerDocumentProps> {
 
   public render() {
     const { stylesheets } = this.props;
+
     return (
       <Html lang="en">
         <Head>
@@ -52,6 +53,14 @@ class ZoomerDocument extends Document<IZoomerDocumentProps> {
         <body>
           <Main />
           <NextScript />
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/react.min.js"></script>
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/react-dom.min.js"></script>
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/redux.min.js"></script>
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/redux-thunk.min.js"></script>
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/lodash.min.js"></script>
+          <script src="https://source.zoom.us/1.8.1/lib/vendor/jquery.min.js"></script>
+          
+          <script src="https://source.zoom.us/zoom-meeting-1.8.1.min.js"></script>
         </body>
       </Html>
     );
