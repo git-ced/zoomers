@@ -24,6 +24,8 @@ const initialConfigDevelopment = {
   env: {
     ZOOM_API_KEY: process.env.ZOOM_API_KEY,
     ZOOM_API_SECRET: process.env.ZOOM_API_SECRET,
+    ZOOM_MEETING_ID: process.env.ZOOM_MEETING_ID,
+    ZOOM_MEETING_PASSWORD: process.env.ZOOM_MEETING_PASSWORD,
   },
 };
 
@@ -31,6 +33,8 @@ const initialConfigProduction = {
   env: {
     ZOOM_API_KEY: process.env.ZOOM_API_KEY_PRODUCTION,
     ZOOM_API_SECRET: process.env.ZOOM_API_SECRET_PRODUCTION,
+    ZOOM_MEETING_ID: process.env.ZOOM_MEETING_ID_PRODUCTION,
+    ZOOM_MEETING_PASSWORD: process.env.ZOOM_MEETING_PASSWORD_PRODUCTION,
   },
 };
 
