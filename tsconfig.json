@@ -19,12 +19,12 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@zoomers/components/*": ["components/*"],
-      "@zoomers/pages/*": ["pages/*"],
-      "@zoomers/scoped-models/*": ["scoped-models/*"],
-      "@zoomers/utils/*": ["utils/*"],
+      "@zoomers/components/*": ["react/components/*"],
+      "@zoomers/pages/*": ["react/pages/*"],
+      "@zoomers/scoped-models/*": ["react/scoped-models/*"],
+      "@zoomers/utils/*": ["react/utils/*"],
     },
   },
   "exclude": ["/node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
 }

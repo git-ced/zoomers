@@ -10,6 +10,8 @@ import { GlobalProvider } from '@zoomers/components/utils/provider/GlobalProvide
 // ANCHOR CSS
 import 'normalize.css/normalize.css';
 import '../public/styles/global.css';
+import '../public/styles/bootstrap.css';
+import '../public/styles/react-select.css';
 
 interface AppProps {
   err?: Error;

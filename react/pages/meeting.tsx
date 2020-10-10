@@ -3,18 +3,18 @@ import React from 'react'
 
 // ANCHOR Component
 import { ZoomerAppHead } from '../components/utils/head/AppHead';
-import { ZoomerHome } from '../components/home';
 import { ZoomerPage } from '../components/utils/page-container';
+import { ZoomerMeeting } from '../components/meeting/index';
 
 export default React.memo(
   () => (
     <>
       <ZoomerAppHead
-        title="Zoomer | Home"
-        description="Zoomer home page"
+        title="Zoomer | Meeting"
+        description="Join a zoom meeting"
       />
       <ZoomerPage>
-        <ZoomerHome />
+        <ZoomerMeeting />
       </ZoomerPage>
     </>
   )

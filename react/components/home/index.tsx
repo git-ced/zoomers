@@ -14,18 +14,16 @@ import { GREETING } from './constants';
 
 export const ZoomerHome = React.memo(
   () => (
-    <>
-      <Block overrides={BLOCK}>
-        <HeadingLarge overrides={TITLE}>
-          {GREETING}
-          <StyledLink
-            $style={LINK}
-            href="/join"
-          >
-            Zoomers!
-          </StyledLink>
-        </HeadingLarge>
-      </Block>
-    </>
+    <Block overrides={BLOCK}>
+      <HeadingLarge overrides={TITLE}>
+        {GREETING}
+        <StyledLink
+          $style={LINK}
+          href="/meeting"
+        >
+          Zoomers!
+        </StyledLink>
+      </HeadingLarge>
+    </Block>
   )
 );
