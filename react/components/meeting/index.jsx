@@ -8,8 +8,9 @@ export const ZoomerMeeting = memo(
   () => {
     useEffect(
       () => {
-        global.ZoomMtg.preLoadWasm();
-        global.ZoomMtg.prepareJssdk();
+        if (global.ZoomMtg) {
+          global.ZoomMtg.preLoadWasm();
+          global.ZoomMtg.prepareJssdk();
 
           const generatedSignature = global.ZoomMtg.generateSignature({
             meetingNumber: meetConfig.meetingNumber,
@@ -21,6 +22,13 @@ export const ZoomerMeeting = memo(
           global.ZoomMtg.init({
             leaveUrl: meetConfig.leaveUrl,
             isSupportAV: true,
+            isSupportChat: false,
+            audioPanelAlwaysOpen: false,
+            isSupportQA: false,
+            disableInvite: true,
+            meetingInfo: [
+              'host',
+            ],
             success: function() {
               ZoomMtg.join({
                 signature: generatedSignature,
@@ -34,7 +42,9 @@ export const ZoomerMeeting = memo(
               })		
             }
           })
-      }, []
+        }
+        
+      }, [global]
     )
     
     return (
